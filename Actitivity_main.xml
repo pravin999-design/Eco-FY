@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout
+android:orientation="vertical" android:padding="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView
+android:layout_width="312dp" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginBottom="20dp" android:text="Carbon Footprint Calculator" android:textSize="24sp" android:textStyle="bold" />
+<EditText
+android:id="@+id/inputKm" android:hint="Kilometers traveled (per day)" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+<EditText
+android:id="@+id/inputElectricity" android:hint="Electricity used (kWh per day)" android:inputType="numberDecimal" android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+<EditText
+android:id="@+id/inputFlights" android:hint="Flights per year" android:inputType="number" android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+<Button
+android:id="@+id/calculateBtn" android:text="Calculate" android:layout_marginTop="24dp"
+android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#05B10A" />
+<TextView
+android:id="@+id/resultText" android:text="Your result will appear here" android:textSize="16sp" android:layout_marginTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>
